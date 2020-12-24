@@ -444,9 +444,10 @@ img.gamestartbg{
 .section4{
   background:url(../images/section4_bg.png) center center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-position: 0% 0%;
+  /* background-attachment: fixed; */
   text-align: center;
-  padding-top: 5%;
+  /* padding-top: 10%; */
   padding-bottom: 5%;
 }
 .title{
@@ -454,10 +455,10 @@ img.gamestartbg{
 }
 .titlebg{
   width: 100%;
-  height: 150%;
+  /* height: 150%; */
   position: absolute;
   left: 0;
-  /* margin-top: -10%; */
+  margin-top: -7%;
 }
 .titletext{
   position: relative;
@@ -474,8 +475,21 @@ img.gamestartbg{
   height: 100%;
 }
 .introsection{
+  margin-top: 30%;
+}
+.introst1{
+  margin-top: 25%;
+}
+.introst2{
+  margin-top: 20%;
+}
+.introst5{
   margin-top: 10%;
 }
+.introst6{
+  margin-top: 10%;
+}
+
 .introcontent{
   position: relative;
   height: 350px;
@@ -485,8 +499,9 @@ img.gamestartbg{
   margin-left: auto;
   margin-right: auto;
   color: #f1f1f1;
-  background: rgba(255, 210, 106, 0.733);
-  box-shadow: 0 8px 32px 0 rgba( 255, 210, 106, 0.37 );
+
+  background: rgba(255, 168, 39, 0.733);
+  box-shadow: 0 8px 32px 0 rgba(255, 168, 39, 0.37 );
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 50%;
@@ -520,6 +535,9 @@ img.intro{
   padding-top: 4%;
   padding-bottom: 7%;
   background-color: hsla(353, 44%, 55%, 0.8);
+}
+.calltoaction{
+  padding-top: 50%;
 }
 .calltoaction > .row{
   text-align: center;
