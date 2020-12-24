@@ -5,26 +5,22 @@ window.addEventListener('load', () =>{
   
   });
   
-  
+
+var body = document.getElementsByTagName("body")[0]; 
 /* Open the sidenav */
 function openNav() {
   document.getElementById("mysidenav").style.width = "100%";
   document.getElementsByClassName("navcontent")[0].style.display = "block";
   document.getElementsByClassName("navcontent")[0].style.visibility = "visible";
-  document.html.style.overflow = 'hidden';
+  body.style.overflow = "hidden";
 }
 
 /* Close/hide the sidenav */
 function closeNav() {
   document.getElementById("mysidenav").style.width = "0";
   document.getElementsByClassName("navcontent")[0].style.display = "none";
-  document.html.style.overflow = 'auto';
+  body.style.overflow = "auto";
 }
-// $("#mysidenav").on("show", function () {
-//   $("body").addClass("modal-open");
-// }).on("hidden", function () {
-//   $("body").removeClass("modal-open")
-// });
   
   
   //Get the button:
