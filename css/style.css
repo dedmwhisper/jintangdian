@@ -400,6 +400,7 @@ img.gamestartbg{
 .gameansbg{
   position: relative;
   text-align: center;
+  filter: brightness(0.9);
 }
 .gameans{
   margin-top: 3%;
@@ -464,7 +465,7 @@ img.gamestartbg{
   position: relative;
   font-weight: 900;
   font-size: 3.5vmax;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -475,13 +476,14 @@ img.gamestartbg{
   height: 100%;
 }
 .introsection{
-  margin-top: 30%;
-}
-.introst1{
   margin-top: 25%;
 }
+
 .introst2{
   margin-top: 20%;
+}
+.introst3{
+  margin-top: 10%;
 }
 .introst5{
   margin-top: 10%;
