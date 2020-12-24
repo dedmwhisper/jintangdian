@@ -8,101 +8,117 @@ body.modal-open {
 *{
   transition: 0.25s;
 }
-body::-webkit-scrollbar {
-  display: none;
-}
-/* .section2{
+/* body::-webkit-scrollbar {
   display: none;
 } */
 /* 主選單 */
 /* sidemenu */
+.home{
+  z-index: 2;
+  position: fixed;
+  cursor: pointer;
+  top: 15px;
+  left: 25px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 50%;
+}
+.home:hover{
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 10px rgb(255,255,255));
+  
+}
 .menu{
-    z-index: 2;
-    position: fixed;
-    cursor: pointer;
-    top: 15px;
-    left: 25px;
-  }
+  z-index: 2;
+  position: fixed;
+  cursor: pointer;
+  top: 15px;
+  right: 25px;
+  background-color: #999999;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+.menu:hover{
+  background-color: rgb(68, 68, 68);
+}
 .navecontent{
-  visibility: hidden;
-  transition: 0.5s;
+visibility: hidden;
+transition: 0.5s;
+display: none;
+}
+.sidenav {
+  height: 100%;
+  width: 0; 
+  position: fixed; 
+  z-index: 3; 
+  top: 0;
+  left: 0;
+  background-color: #111111; 
+  overflow: hidden; 
+  padding-top: 5px; 
+  transition: 0.5s; 
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+z-index: 999;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+a.profile{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 1%;
+  transition: 0.3s ease-in-out;
+  color: #fff;
+}
+.profilepic{
+  cursor: pointer;
+  filter:brightness(.5);
+}
+.profilepic:hover ~ span.protext{
+  margin-top: 180px;
+}
+.profilepic:hover{
+  filter:brightness(1);
+  transform: rotate(-15deg);
+}
+.protext{
+  cursor: pointer;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  font-size: 3vmax;
+  font-weight: 900;
+  color: #fff;
+}
+.protext:hover{
   display: none;
 }
-  .sidenav {
-    height: 100%;
-    width: 0; 
-    position: fixed; 
-    z-index: 3; 
-    top: 0;
-    left: 0;
-    background-color: #111; 
-    overflow: hidden; 
-    padding-top: 5px; 
-    transition: 0.5s; 
-  }
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  .sidenav .closebtn {
-  z-index: 999;
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  .profile{
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    padding: 1%;
-    transition: 0.3s ease-in-out;
-    color: #fff;
-  }
-  .profilepic{
-    cursor: pointer;
-    filter:brightness(.5);
-  }
-  .profilepic:hover ~ span.protext{
-    margin-top: 180px;
-  }
-  .profilepic:hover{
-    filter:brightness(1);
-    transform: rotate(-15deg);
-  }
-  .protext{
-    cursor: pointer;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    font-size: 3vmax;
-    font-weight: 900;
-    /* color: #fff; */
-  }
-  .protext:hover{
-    display: none;
-  }
 span.protext:hover ~ img.profilepic{
-  filter: brightness(1);
+filter: brightness(1);
 }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-  /* -------------------------------- 
-  
-  Modules - reusable parts of our design
 
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  /* -------------------------------- 
+  Modules - reusable parts of our design
   -------------------------------- */
 .cd-img-replace {
     /* replace text with a background-image */
@@ -230,16 +246,16 @@ p.bubble {
 }
 p.b1{
   left: 5%;
-  top: 25%;
+  top: 0%;
 }
 p.b2{
-  left: 57%;
-  top: 54%;
+  left: 63%;
+  top: 45%;
   border-radius: 0px 1vmax 5px 1vmax;
 }
 p.b3{
-  left: 50%;
-  top: 33%;
+  left: 0%;
+  top: 50%;
   border-radius: 0px 1vmax 5px 1vmax;
 }
 @keyframes bounce-in {
@@ -380,6 +396,50 @@ img.gamestartbg{
   left: 70.6%;
   top: 80%;
 }
+/* gameans */
+.gameansbg{
+  position: relative;
+  text-align: center;
+}
+.gameans{
+  margin-top: 3%;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  width: 70%;
+  height: 20vh;
+}
+.ans{
+  position: absolute;
+  transition: 0.25s;
+  transform: scale(0.6);
+  left: 0;
+  top: 0px;
+  filter: brightness(0);
+}
+.ans1{
+  left: 5%;
+  top: 10%;
+}
+.ans2{
+  left: 25%;
+  top: 10%;
+}
+.ans3{
+  left: 45%;
+  top: 0%;
+}
+.ans4{
+  left: 65%;
+  top: 20%;
+}
+.ans5{
+  left: 85%;
+  top: 25%;
+}
+
 /* section4 */
 .section4{
   background:url(../images/section4_bg.png) center center no-repeat;
@@ -389,16 +449,47 @@ img.gamestartbg{
   padding-top: 5%;
   padding-bottom: 5%;
 }
+.title{
+  position: relative;
+}
+.titlebg{
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  left: 0;
+  /* margin-top: -10%; */
+}
+.titletext{
+  position: relative;
+  font-weight: 900;
+  font-size: 3.5vmax;
+  margin-top: 5%;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* background-image: url(../images/title_bg.png);
+  background-size: cover;
+  background-position: 50%; */
+  width: 100%;
+  height: 100%;
+}
+.introsection{
+  margin-top: 10%;
+}
 .introcontent{
+  position: relative;
+  height: 350px;
+  width: 350px;
   padding: 10%;
   padding-top: 5%;
-  margin: 10%;
+  margin-left: auto;
+  margin-right: auto;
   color: #f1f1f1;
-  background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background: rgba(255, 210, 106, 0.733);
+  box-shadow: 0 8px 32px 0 rgba( 255, 210, 106, 0.37 );
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
-  border-radius: 20px;
+  border-radius: 50%;
   border: 1px solid #fff;
 }
 img.intro{
@@ -413,6 +504,27 @@ img.intro{
   background-color: #fff;
 }
 .introcontent > p{
-  text-align-last: left;
-  font-size: 18px;
+  width: 80%;
+  position: absolute;
+  text-align: center;
+  font-size: 26px;  /* ★ */
+  top: 50%; 
+  left: 50%;            /* ★ */
+  transform: translate(-50%,-50%); 
+  font-weight: 600;
+  line-height: 1.5;
+
+}
+
+.section5{
+  padding-top: 4%;
+  padding-bottom: 7%;
+  background-color: hsla(353, 44%, 55%, 0.8);
+}
+.calltoaction > .row{
+  text-align: center;
+}
+.cta{
+  text-align: center;
+  padding-top: 10px;
 }
