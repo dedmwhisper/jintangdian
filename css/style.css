@@ -213,7 +213,7 @@ section > .container-fluid{
 .face{
   position: absolute;
   left: 50%;
-  top: 47%;
+  top: 49%;
   transform: translateX(-50%);
 }
 /* marquee */
